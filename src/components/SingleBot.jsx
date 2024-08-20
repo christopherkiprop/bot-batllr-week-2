@@ -6,15 +6,15 @@ function SingleBot({ data, setArmy, army, canBeRemoved, index }) {
 
   // Function to add the bot to the army
   function addToArmy(newData) {
-    setArmy((prevData) => [...prevData, newData]); // Add new bot to army
-    setIsClicked(true); // Set clicked state to true
+    setArmy((prevData) => [...prevData, newData]); 
+    setIsClicked(true); 
   }
 
   // Function to remove the bot from the army
   function removeFromArmy(index) {
     // Filter out the bot at the given index
     const updatedArmy = army.filter((_, i) => i !== index);
-    setArmy(updatedArmy); // Update the army state
+    setArmy(updatedArmy); 
   }
 
   return (
